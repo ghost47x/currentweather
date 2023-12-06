@@ -5,21 +5,18 @@
   <title>Current Weather</title>
   <style>
     body {
-      font-family: Times New Roman, sans-serif;
+      font-family: 'Times New Roman', sans-serif;
       font-style: italic;
       text-align: center;
       margin: 0;
       padding: 0;
       overflow: hidden;
+      background-image: url(images/weather1.png);
+      background-size: cover;
+      background-repeat: no-repeat;
     }
-    #video-background {
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        min-width: 100%;
-        min-height: 100%;
-        z-index: -1;
-    }
+    
+  
      
     .temperature,
     .location {
@@ -31,12 +28,12 @@
       opacity: 1; /* Show elements with fade-in effect */
     }
     .temperature {
-      font-size: 3em;
+      font-size: 7em;
       margin-bottom: 20px;
       color:antiquewhite
     }
     .location {
-      font-size: 1.5em;
+      font-size: 3.5em;
       color:beige
     }
     h1 {
@@ -44,14 +41,11 @@
     }
     .user-input p {
         color: azure;
+        font-size: 3.7em;
     }
   </style>
 </head>
 <body>
-    <video autoplay muted loop id="video-background">
-        <source src="video/pexels_videos_4329 (1080p).mp4" type="video/mp4">
-        Your browser does not support the video tag
-    </video>
   <h1>Current Weather</h1>
   <div class="user-input">
     <p>What city are you looking for?</p>
@@ -98,4 +92,5 @@
   </script>
 </body>
 </html>
+
 
